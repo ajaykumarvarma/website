@@ -28,8 +28,15 @@
             text-align: center;
             margin: 25px 0;
             font-family: 'Supermercado One', cursive;
-            font-size: 47px;
+            font-size: 43px;
         }
+       .headingsecond {
+            text-align: center;
+            margin: 20px 0;
+            font-family: 'Supermercado One', cursive;
+            font-size: 25px;
+        }
+       
 
         .content {
             font-size: 20px;
@@ -73,7 +80,7 @@ button {
         -o-transition: all 0.5s;
         transition: all 0.5s;
         cursor: pointer;
-        margin: 19px;
+        margin: 8px;
       }
 button a{
   text-decoration:none;
@@ -92,11 +99,42 @@ footer {
   align-items: center;
   text-align: center;
 }
+ul.nysr {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    list-style: none;
+    padding-inline-start: 0;
+}
 
+li.single-nysr {
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f5f5f5;
+	text-align: left;
+	border: 1px solid #c9c9c9;
+    border-radius: .25rem;
+}
+
+li.single-nysr:first-child {
+	margin-left: 0;
+}
+
+li.single-nysr:last-child {
+	margin-right: 0;
 footer p {
   margin: 4rem auto 1rem auto;
   font-size: 1.1rem;
 }
+video.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
     </style>
     <title>Ransomware</title>
 </head>
@@ -114,7 +152,7 @@ footer p {
         <img class="hero-img"
             src="https://media.gettyimages.com/illustrations/lock-abstract-glitch-background-illustration-id1291279260?s=612x612" />
 
-
+<br>
     </div>
  <h1 class="heading">Some Ransomware Attacks</h1>
          <div class="box">
@@ -129,14 +167,33 @@ footer p {
 
     </div>
 <br>
+ <div class="box">
+        <p class="content">
+          Bad Rabbit:Bad Rabbit presents nothing new in its subtle techniques: it follows the footsteps of WannaCry and NotPetya. It has hit organizations mainly in Russia and Eastern Europe disguised as an Adobe Flash installation. It spreads via drive-by downloads on compromised websites where it was inserted into HTML code or Java files using JavaScript. Once downloaded and installed, the PC is locked. The ransom is $ 280 in bitcoin with a 40-hour-deadline.
+        </p>
+      
+        <img class="hero-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWKy00ZA3koG6d_8fFXm4P4juw7DVN8hqZvB4llW1uzPiQiQ0UXQWBKKsESpNHMRbGRns&usqp=CAU" />
 
+
+    </div>
+<br>
+ <h1 class="heading">How To Prevent Your Computer/Laptop From Ransomwares!</h1><br>
+<h3 class="headingsecond">Watch Video Below !</h3>
+<center>
+        <video width = "600" height = "450" poster="https://i.ytimg.com/vi/SgYYJnE36RA/maxresdefault.jpg "controls>
+	<source src = "https://cyberthreats.ajaykumarvarma.live/Ransomware%20and%20How%20to%20Prevent%20a%20Ransomware%20Attack%20(2021).mp4">
+</video>
+</center>
+<br><br><br>
   <button class="vertical-center" type="button" style="background-color:lightblue;margin-right:auto;margin-left:auto;display:block;margin-top:0%;margin-bottom:3%;border:none;padding:10px 12px;">
         <a href="https://www.kaspersky.com/resource-center/threats/ransomware" target="_blank">View More About Ransomware!</a>
       </button>
-
+<br><br>
 <footer>
     <p>Made with ❤️ by <span class="ui">Ajay</span></p>
   </footer>
+<br>
 </body>
 
 </html>
