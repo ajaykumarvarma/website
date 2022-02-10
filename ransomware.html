@@ -30,13 +30,68 @@
             font-family: 'Supermercado One', cursive;
             font-size: 43px;
         }
-       .headingsecond {
+
+        .headingsecond {
             text-align: center;
             margin: 20px 0;
             font-family: 'Supermercado One', cursive;
             font-size: 25px;
         }
-       
+
+        nav {
+            display: flex;
+            padding: 2% 6% justify-content: space-between;
+            align-items: center;
+
+            background-color: #FFC300;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+            font-size: 15px;
+            font-weight: 200;
+        }
+
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            ;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            display: block;
+            background: #f44336;
+            margin: auto;
+
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+
+        .headingthird {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+
 
         .content {
             font-size: 20px;
@@ -65,81 +120,127 @@
             width: 380px;
             border-radius: 10px;
         }
-button {
-        display: inline-block;
-        background-color: #D8C09A;
-        border-radius: 10px;
-        border: 4px double #cccccc;
-        color: #eeeeee;
-        text-align: center;
-        font-size: 21px;
-        padding: 7px;
-        width: 235px;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 8px;
-      }
-button a{
-  text-decoration:none;
-  color:black;
-}
 
-button{
-  border-radius:10px;
-}
-button:hover {
-  background-color: green;
-}
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-ul.nysr {
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    list-style: none;
-    padding-inline-start: 0;
-}
+        button {
+            display: inline-block;
+            background-color: #D8C09A;
+            border-radius: 10px;
+            border: 4px double #cccccc;
+            color: #eeeeee;
+            text-align: center;
+            font-size: 21px;
+            padding: 7px;
+            width: 235px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 8px;
+        }
 
-li.single-nysr {
-    width: 25%;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #f5f5f5;
-	text-align: left;
-	border: 1px solid #c9c9c9;
-    border-radius: .25rem;
-}
+        button a {
+            text-decoration: none;
+            color: black;
+        }
 
-li.single-nysr:first-child {
-	margin-left: 0;
-}
+        button {
+            border-radius: 10px;
+        }
 
-li.single-nysr:last-child {
-	margin-right: 0;
-footer p {
-  margin: 4rem auto 1rem auto;
-  font-size: 1.1rem;
-}
-video.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+        button:hover {
+            background-color: green;
+        }
 
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        ul.nysr {
+            width: 100%;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            list-style: none;
+            padding-inline-start: 0;
+        }
+
+        li.single-nysr {
+            width: 25%;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #f5f5f5;
+            text-align: left;
+            border: 1px solid #c9c9c9;
+            border-radius: .25rem;
+        }
+
+        li.single-nysr:first-child {
+            margin-left: 0;
+        }
+
+        li.single-nysr:last-child {
+            margin-right: 0;
+        }
+
+        footer p {
+            margin: 4rem auto 1rem auto;
+            font-size: 1.1rem;
+        }
+
+        video.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            padding: 0 20px;
+
+        }
+
+        .nav-links li {
+            list-style-type: none;
+
+        }
+
+        .nav-links {
+            margin-left: 65%;
+            display: flex;
+            justify-content: space-between;
+
+        }
     </style>
     <title>Ransomware</title>
 </head>
 
 <body bgcolor="azure">
+    <nav>
+        <header>
+            <div class='headingthird'>
+                <h3>Ajay Cybersecurity Guides</h3>
+            </div>
+            <div>
+                <ul class='nav-links'>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+    </nav>
+    </header>
     <h1 class="heading">Ransomware</h1>
 
     <div class="box">
@@ -148,52 +249,61 @@ video.center {
             systems, or networks and demands you pay a ransom for their return. Ransomware attacks can
             cause costly disruptions to operations and the loss of critical information and data.
         </p>
-      
+
         <img class="hero-img"
             src="https://media.gettyimages.com/illustrations/lock-abstract-glitch-background-illustration-id1291279260?s=612x612" />
 
-<br>
+        <br>
     </div>
- <h1 class="heading">Some Ransomware Attacks</h1>
-         <div class="box">
-     
-        <p class="content">WannaCry: A powerful Microsoft exploit was leveraged to create a worldwide ransomware worm that infected over 250,000 systems before a killswitch was tripped to stop its spread. Proofpoint was involved in finding the sample used to find the killswitch and in deconstructing the ransomware  
-         </p>
-      
+    <h1 class="heading">Some Ransomware Attacks</h1>
+    <div class="box">
+
+        <p class="content">WannaCry: A powerful Microsoft exploit was leveraged to create a worldwide ransomware worm
+            that infected over 250,000 systems before a killswitch was tripped to stop its spread. Proofpoint was
+            involved in finding the sample used to find the killswitch and in deconstructing the ransomware
+        </p>
+
         <img class="hero-img"
             src="https://images.theconversation.com/files/169334/original/file-20170515-6987-lw7ou2.png?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" />
-      
+
 
 
     </div>
-<br>
- <div class="box">
+    <br>
+    <div class="box">
         <p class="content">
-          Bad Rabbit:Bad Rabbit presents nothing new in its subtle techniques: it follows the footsteps of WannaCry and NotPetya. It has hit organizations mainly in Russia and Eastern Europe disguised as an Adobe Flash installation. It spreads via drive-by downloads on compromised websites where it was inserted into HTML code or Java files using JavaScript. Once downloaded and installed, the PC is locked. The ransom is $ 280 in bitcoin with a 40-hour-deadline.
+            Bad Rabbit:Bad Rabbit presents nothing new in its subtle techniques: it follows the footsteps of WannaCry
+            and NotPetya. It has hit organizations mainly in Russia and Eastern Europe disguised as an Adobe Flash
+            installation. It spreads via drive-by downloads on compromised websites where it was inserted into HTML code
+            or Java files using JavaScript. Once downloaded and installed, the PC is locked. The ransom is $ 280 in
+            bitcoin with a 40-hour-deadline.
         </p>
-      
+
         <img class="hero-img"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWKy00ZA3koG6d_8fFXm4P4juw7DVN8hqZvB4llW1uzPiQiQ0UXQWBKKsESpNHMRbGRns&usqp=CAU" />
 
 
     </div>
-<br>
- <h1 class="heading">How To Prevent Your Computer/Laptop From Ransomwares!</h1><br>
-<h3 class="headingsecond">Watch Video Below !</h3>
-<center>
-        <video width = "600" height = "450" poster="https://i.ytimg.com/vi/SgYYJnE36RA/maxresdefault.jpg "controls>
-	<source src = "https://cyberthreats.ajaykumarvarma.live/Ransomware%20and%20How%20to%20Prevent%20a%20Ransomware%20Attack%20(2021).mp4">
-</video>
-</center>
-<br><br><br>
-  <button class="vertical-center" type="button" style="background-color:lightblue;margin-right:auto;margin-left:auto;display:block;margin-top:0%;margin-bottom:3%;border:none;padding:10px 12px;">
-        <a href="https://www.kaspersky.com/resource-center/threats/ransomware" target="_blank">View More About Ransomware!</a>
-      </button>
-<br><br>
-<footer>
-    <p>Made with ❤️ by <span class="ui">Ajay</span></p>
-  </footer>
-<br>
+    <br>
+    <h1 class="heading">How To Prevent Your Computer/Laptop From Ransomwares!</h1><br>
+    <h3 class="headingsecond">Watch Video Below !</h3>
+    <center>
+        <video width="600" height="450" poster="https://i.ytimg.com/vi/SgYYJnE36RA/maxresdefault.jpg " controls>
+            <source
+                src="https://cyberthreats.ajaykumarvarma.live/Ransomware%20and%20How%20to%20Prevent%20a%20Ransomware%20Attack%20(2021).mp4">
+        </video>
+    </center>
+    <br><br><br>
+    <button class="vertical-center" type="button"
+        style="background-color:lightblue;margin-right:auto;margin-left:auto;display:block;margin-top:0%;margin-bottom:3%;border:none;padding:10px 12px;">
+        <a href="https://www.kaspersky.com/resource-center/threats/ransomware" target="_blank">View More About
+            Ransomware!</a>
+    </button>
+    <br><br>
+    <footer>
+        <p>Made with ❤️ by <span class="ui">Ajay</span></p>
+    </footer>
+    <br>
 </body>
 
 </html>
