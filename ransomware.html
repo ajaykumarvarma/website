@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -152,12 +153,79 @@
             background-color: green;
         }
 
-        footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+       
+.footer {
+  background: black;
+  color: white;
+  padding: 5rem;
+}
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 10%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.heading-foot {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.col a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 0;
+}
+.end-line {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  color: white;
+  padding: 3rem;
+}
+
+.logo {
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  font-size: 1.8rem;
+}
+.copy {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.social i {
+  font-size: 1.5rem;
+  padding: 0 20px;
+  color: white;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-facebook-f:hover {
+  color: #3a559f;
+}
+
+.fa-instagram:hover {
+  color: red;
+}
+
+.fa-linkedin:hover {
+  color: #0274b3;
+}
+
+.fa-twitter:hover {
+  color: #01a2ed;
+}
 
         ul.nysr {
             width: 100%;
@@ -203,6 +271,7 @@
             justify-content: space-around;
             align-items: center;
         }
+       
 
         .nav-links li a {
             text-decoration: none;
@@ -221,6 +290,7 @@
             justify-content: space-between;
 
         }
+ 
     </style>
     <title>Ransomware</title>
 </head>
@@ -235,7 +305,7 @@
                 <ul class='nav-links'>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://t.me/ajayownerofhg">Contact</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
             </div>
@@ -300,9 +370,44 @@
             Ransomware!</a>
     </button>
     <br><br>
-    <footer>
-        <p>Made with ❤️ by <span class="ui">Ajay</span></p>
-    </footer>
+    <div class="footer">
+    <div class="grid-wrap">
+      <div class="col flex">
+        <p class="heading-foot">Antivirus Softwares</p>
+        <a href="https://www.bitdefender.com/">Bitdefender</a>
+        <a href="https://www.malwarebytes.com/">Malwarebytes</a>
+        <a href="https://www.kaspersky.co.in/">Kaspersky</a>
+        <a href="https://www.mcafee.com/en-in/index.html">Mcafee</a>
+      </div>
+      <div class="col flex">
+        <p class="heading-foot">explore</p>
+        <a href="#">community</a>
+        <a href="#">blog</a>
+        <a href="#">Older Version</a>
+      </div>
+      <div class="col flex">
+        <p class="heading-foot">AJAY</p>
+        <a href="https://webprogramming.ajaykumarvarma.live/web%20programming/week4-web-resume-3frames/index.html">about me</a>
+        <a href="#">faq</a>
+        <a href="#">contact us</a>
+      </div>
+      <div class="col flex">
+        <p class="heading-foot">legal</p>
+        <a href="#">privacy policy</a>
+        <a href="#">terms & conditions</a>
+      </div>
+    </div>
+  </div>
+  <div class="end-line">
+    <p class="logo">AJAY</p>
+    <p class="copy centering">&copy; AJAY CYBERSECURITY GUIDES 2022. All rights reserved</p>
+    <div class="social centering">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ajaykumarvarma_32/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/nagaraju-ajay-kumar-varma-4b0449228/"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
     <br>
 </body>
 
